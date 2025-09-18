@@ -1,4 +1,4 @@
-<plugin id="cordova-plugin-idscan-intent" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins">
+<plugin id="cordova-plugin-idscan-intent" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins">
   <name>IdScanIntentPlugin</name>
 
   <js-module src="www/idScanIntent.js" name="IdScanIntent">
