@@ -1,0 +1,17 @@
+<plugin id="cordova-plugin-idscan-intent" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins">
+  <name>IdScanIntentPlugin</name>
+
+  <js-module src="www/intentShim.js" name="IntentShim">
+    <clobbers target="window.plugins.intentShim" />
+  </js-module>
+
+  <platform name="android">
+    <source-file src="src/android/com/idscan/intent/IdScanIntentPlugin.java" target-dir="src/com/idscan/intent" />
+    <source-file src="src/android/com/idscan/intent/IntentShim.java" target-dir="src/com/idscan/intent" />
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="IntentShim">
+        <param name="android-package" value="com.idscan.intent.IntentShim" />
+      </feature>
+    </config-file>
+  </platform>
+</plugin>
