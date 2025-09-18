@@ -6,7 +6,7 @@
   </js-module>
 
   <platform name="android">
-    <source-file src="src/android/com/idscan/intent/IdScanIntentPlugin.java" target-dir="com/idscan/intent" />
+    <source-file src="src/android/com/idscan/intent/IdScanIntentPlugin.java" target-dir="src/com/idscan/intent" />
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="cordova.plugins.IdScanIntent">
         <param name="android-package" value="com.idscan.intent.IdScanIntentPlugin" />
