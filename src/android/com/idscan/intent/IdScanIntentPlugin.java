@@ -1,4 +1,4 @@
-package src;
+package com.idscan.intent;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
