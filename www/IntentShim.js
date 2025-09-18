@@ -1,10 +1,11 @@
 var exec = require('cordova/exec');
 
 module.exports = {
-  startListening: function (success, error) {
-    exec(success, error, "IdScanIntentPlugin", "startListening", []);
+  startListening: function (successCallback, errorCallback) {
+    exec(successCallback, errorCallback, "IdScanIntentPlugin", "startListening", []);
   },
-  sendBroadcast: function (params, success, error) {
-    exec(success, error, "IntentShim", "sendBroadcast", [params]);
+
+  sendBroadcast: function (params, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, "IntentShim", "sendBroadcast", [params]);
   }
 };
