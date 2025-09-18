@@ -1,0 +1,9 @@
+{
+  "name": "cordova-plugin-idscan-intent",
+  "version": "1.0.0",
+  "description": "Cordova plugin for listening to Zebra DataWedge intent broadcasts",
+  "cordova": {
+    "id": "cordova-plugin-idscan-intent",
+    "platforms": ["android"]
+  }
+}
