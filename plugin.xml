@@ -1,0 +1,11 @@
+<plugin id="cordova-plugin-idscan-intent" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins">
+  <name>IdScanIntentPlugin</name>
+
+  <js-module src="www/idScanIntent.js" name="IdScanIntent">
+    <clobbers target="cordova.plugins.IdScanIntent" />
+  </js-module>
+
+  <platform name="android">
+    <source-file src="src/android/IdScanIntentPlugin.java" target-dir="src" />
+  </platform>
+</plugin>
