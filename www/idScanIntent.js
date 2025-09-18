@@ -1,5 +1,7 @@
+var exec = require('cordova/exec');
+
 module.exports = {
-  startListening: function (successCallback, errorCallback) {
-    cordova.exec(successCallback, errorCallback, "IdScanIntentPlugin", "startListening", []);
+  startListening: function(success, error) {
+    exec(success, error, "IdScanIntent", "startListening", []);
   }
 };
